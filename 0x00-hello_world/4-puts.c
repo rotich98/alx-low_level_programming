@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- *
- * Explanation: main - it prints out a string to stdout.
- *
+ * Description: main - it prints out a string to stdout.
  * Return: 0 if success.
  */
 
