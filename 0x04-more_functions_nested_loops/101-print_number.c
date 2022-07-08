@@ -3,16 +3,16 @@
 
 /**
  * print_numbers - prints numbers 0 to 9 and new line
- * @i: The integer to prints.
+ * @n: The integer to prints.
  */
-void print_numbers(int i)
+void print_numbers(int n)
 {
-	unsigned int x = i;
+	unsigned int x = n;
 
-	if (i < 0)
+	if (n < 0)
 	{
-		i *= -1;
-		x = i;
+		n *= -1;
+		x = n;
 		_putchar('-');
 	}
 
@@ -20,6 +20,6 @@ void print_numbers(int i)
 
 	if (x != 0)
 		print_number(x);
-	_putchar((unsigned int) i % 10 + '0');
+	_putchar((unsigned int) n % 10 + '0');
 }
 
