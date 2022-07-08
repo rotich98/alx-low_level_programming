@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_numbers - prints numbers 0 to 9 and new line
+ * print_number - prints numbers 0 to 9 and new line
  * @n: The integer to prints.
  */
-void print_numbers(int n)
+void print_number(int n)
 {
 	unsigned int x = n;
 
