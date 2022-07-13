@@ -1,9 +1,10 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strcat -> This is a fubction
- * @*dest: Parameter
- * @*src: Parameter
+ * @dest: Parameter
+ * @src: Parameter
  * Return: A string
  */
 char *_strcat(char *dest, char *src)
@@ -21,4 +22,3 @@ char *_strcat(char *dest, char *src)
 	dest[len] = '\0';
 	return (dest);
 }
-
