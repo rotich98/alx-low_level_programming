@@ -1,4 +1,5 @@
 #include "main.h"
+#include "string.h"
 
 /**
  * _strncpy -> A function that concatenates two strings
