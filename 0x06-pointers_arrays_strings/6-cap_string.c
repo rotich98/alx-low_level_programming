@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * cap_string -> A function that capitalizes character
@@ -7,28 +8,21 @@
  */
 char *cap_string(char *p)
 {
-	int len = 0;
+	int x = 0, i;
+	int len = 13;
+	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
-	while (p[++len])
+	while (p[x])
 	{
-		while (!(p[len] >= 'a' && p[len] <= 'z'))
-			len++;
+		i = 0;
 
-		if (p[len - 1] == ' ' ||
-			p[len - 1] == '\t' ||
-			p[len - 1] == '\n' ||
-			p[len - 1] == ',' ||
-			p[len - 1] == ';' ||
-			p[len - 1] == '.' ||
-			p[len - 1] == '!' ||
-			p[len - 1] == '?' ||
-			p[len - 1] == '"' ||
-			p[len - 1] == '(' ||
-			p[len - 1] == ')' ||
-			p[len - 1] == '{' ||
-			p[len - 1] == '}')
-			p[len] -= 32;
+		while (i < len)
+		{
+			if ((x == 0 || p[x - 1] == spc[i]) && (p[x] >= 97 && p[x] <= 122))
+				p[x] -= 32;
+			i++;
+		}
+		x++;
 	}
 	return (p);
 }
-
