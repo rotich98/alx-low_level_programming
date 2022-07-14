@@ -14,7 +14,8 @@ char *leet(char *p)
 	{
 		for (len2 = 0; len2 <= 7; len2++)
 		{
-			if (p[len1] == leet[len2] || p[len1] - 32 == leet[len2])
+			if (p[len1] == leet[len2] ||
+				p[len1] - 32 == leet[len2])
 				p[len1] = len2 + '0';
 		}
 	}
