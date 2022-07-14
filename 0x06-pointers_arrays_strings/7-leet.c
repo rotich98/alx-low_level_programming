@@ -11,7 +11,7 @@ char *leet(char *p)
 	char r[5] = {'A', 'E', 'O', 'T', 'L'};
 	char n[5] = {'4', '3', '0', '7', '1'};
 
-	while (p[a])
+	while (p[x])
 	{
 		y = 0;
 
