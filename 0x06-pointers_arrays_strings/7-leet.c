@@ -13,6 +13,8 @@ char *leet(char *p)
 
 	while (p[a])
 	{
+		y = 0;
+
 		while (y < i)
 		{
 			if (p[x] == r[y] || p[x] - 32 == r[y])
