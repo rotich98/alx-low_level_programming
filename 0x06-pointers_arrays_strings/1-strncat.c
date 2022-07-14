@@ -7,7 +7,7 @@
  * @n: concatenation limit
  * Return: Apointer to the resulting string
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int len = 0, i = 0;
 
