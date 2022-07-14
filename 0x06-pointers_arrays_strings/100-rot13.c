@@ -19,18 +19,16 @@ char *rot13(char *p)
 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E',
 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'};
 	while (p[x] != 0)
-	char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S',
-	
-	while (p[++len1])
 	{
-		for (len2 = 0; len2 < 52; len2++)
+		for (len = 0; len < 52; len++)
 		{
-			if (p[len1] == alphabet[len2])
+			if (p[x] == start[len])
 			{
-				p[len1] = rot13key[len2];
+				p[x] = end[len];
 				break;
 			}
 		}
+		x++;
 	}
 	return (p);
 }
