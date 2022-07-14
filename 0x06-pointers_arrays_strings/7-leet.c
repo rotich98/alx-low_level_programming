@@ -7,18 +7,21 @@
  */
 char *leet(char *p)
 {
-	int len1 = 0, len2;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int x = 0, y = 0, i = 5;
+	char r[5] = {'A', 'E', 'O', 'T', 'L'};
+	char n[5] = {'4', '3', '0', '7', '1'};
 
-	while (p[++len1])
+	while (p[a])
 	{
-		for (len2 = 0; len2 <= 7; len2++)
+		while (y < i)
 		{
-			if (p[len1] == leet[len2] ||
-				p[len1] - 32 == leet[len2])
-				p[len1] = len2 + '0';
+			if (p[x] == r[y] || p[x] - 32 == r[y])
+			{
+				p[x] = n[y];
+			}
+			y++;
 		}
+		x++;
 	}
 	return (p);
 }
-
