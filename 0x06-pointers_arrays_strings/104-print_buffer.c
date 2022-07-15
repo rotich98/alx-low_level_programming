@@ -21,7 +21,7 @@ void print_buffer(char *b, int size)
 
 				else
 					printf("%02x", *(b + len + byte));
-				if ((len % 2) != 0 && len !)
+				if ((len % 2) != 0 && len != 0)
 					printf(" ");
 			}
 			for (len = 0; len < 10; len++)
