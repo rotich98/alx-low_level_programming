@@ -1,5 +1,9 @@
-#include  <main.h>
+#include <stdio.h>
 
+/**
+ * main -> function
+ * Return: returns nothing
+ */
 int main(void)
 {
 	int n;
