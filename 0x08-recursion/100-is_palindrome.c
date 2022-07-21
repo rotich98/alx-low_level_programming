@@ -42,5 +42,5 @@ int look(char *s, int begin, int end, int grp)
 	else if (s[begin] != s[end])
 		return (0);
 	else
-		return (look(s, begin + 1, end - 1, grp))
+		return (look(s, begin + 1, end - 1, grp));
 }
