@@ -12,5 +12,8 @@ int is_prime_number(int n);
 int prime_num(int n, int corre);
 int is_palindrome(char *s);
 int look(char *s, int begin, int end, int grp);
+int wildcmp(char *s1, char *s2);
+int lookLast(char *s, int i);
+int looker(char *s1, char *s2, int a, int b, int wildUsed);
 
 #endif
