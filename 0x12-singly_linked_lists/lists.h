@@ -10,9 +10,7 @@
  * @str: string - (malloc'ed string)
  * @len: length of the string
  * @next: points to the next node
- *
  * Description: singly linked list node structure
- * for Holberton project
  */
 typedef struct list_s
 {
@@ -22,6 +20,7 @@ typedef struct list_s
 } list_t;
 
 size_t print_list(const list_t *h);
+size_t list_len(const list_t *h);
 
 
 #endif
