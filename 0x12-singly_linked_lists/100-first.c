@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * tartfunction - prints a string before the main function is executed
+ * startfunction - prints a string before the main function is executed
  *
  * Return: void
  */
